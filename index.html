@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> -_Game Của Tôi_- </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      <span style = "color : red">Game của tôi</span>
+    </h1>
+  </header>
+  <section id="gioi-thieu">
+    <h2>Giới thiệu</h2>
+    <p>Game của tôi là game hành động dành riêng cho Windows.</p>
+  </section>
+  <section id="tai">
+  <div>
+    <button id="tai-game">
+      <span style="color:red">Bấm vào đây để tải bản Windows (.zip)</span>
+    </button>
+    <p id="thongbao"></p>
+  </div>
+</section>
+
+<script>
+  document.getElementById("tai-game").addEventListener("click", function () {
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank", "noopener");
+  });
+</script>
+  <h2>Hình minh họa:</h2>
+
+  <!-- Hiển thị ảnh -->
+  <!-- Hiển thị ảnh -->
+  <img src="https://res.cloudinary.com/djnurdfaf/image/upload/v1752062949/images_1_jieshe.jpg"
+     alt="Ảnh minh họa"
+     width="200">
+
+  <br><br>
+  <button id="tai-anh">Tải ảnh về</button>
+
+  <script>
+  document.getElementById("tai-anh").addEventListener("click", async function () {
+    const imageURL = "https://res.cloudinary.com/djnurdfaf/image/upload/v1752069283/download_kvowvs.jpg";
+
+    try {
+      const response = await fetch(imageURL, { mode: 'cors' });
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = "Ellen ngố.jpg"; // tên khi lưu
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      URL.revokeObjectURL(url); // giải phóng bộ nhớ
+    } catch (error) {
+      alert("Không thể tải ảnh. Có thể do cấu hình CORS hoặc lỗi kết nối.");
+      console.error(error);
+    }
+  });
+  </script>
+
+  </body>
+
+</body>
+</html>
