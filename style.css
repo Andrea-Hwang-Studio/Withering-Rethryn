@@ -33,23 +33,62 @@ h2 {
 }
 #tai_game:hover{
     cursor: pointer;
-    transform : scale(1.05);
+    transform : scale(1.025);
     opacity: 0.8;
+    transition: all 0.15s ease;
 }
 
- #tai-anh {
-    display: flex;
-    justify-content: center;  /* căn giữa ngang */
-    align-items: center;      /* căn giữa dọc */
-    height: 20vh;             /* chiếm toàn màn hình */
-    
+#div_anh_Ellen{              
+    display: flex;               /* Kích hoạt Flexbox */
+    justify-content: center;     /* Căn giữa ngang */
+    align-items: center;
 }
-           
 
+#anh_Ellen:hover{
+    cursor: pointer;
+    transform : scale(2.5);
+    transition: all 0.1s ease;
+}
+#div_tai_anh{
+  height: 25vh;               /* Chiều cao toàn màn hình */
+  display: flex;               /* Kích hoạt Flexbox */
+  justify-content: center;     /* Căn giữa ngang */
+  align-items: center;         /* Căn giữa dọc */
+}
+#tai_anh{
+  padding: 48px 72px;
+  font-size: 36px;
+  background-color: #5bf063;
+  color: rgb(255, 255, 255);
+  border: 5px dashed rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+#tai_anh:hover{
+    cursor: pointer;
+    transform : scale(1.025);
+    opacity: 0.8;
+    transition: all 0.15s ease;
+}
 
-#tai-anh-real {
-    display: flex;
-    justify-content: center;  /* căn giữa ngang */
-    align-items: center;      /* căn giữa dọc */
-    height: 20vh;             /* chiếm toàn màn hình */
+#div_tai_anh_real{
+  height: 25vh;               /* Chiều cao toàn màn hình */
+  display: flex;               /* Kích hoạt Flexbox */
+  justify-content: center;     /* Căn giữa ngang */
+  align-items: center;         /* Căn giữa dọc */
+}
+#tai_anh_real{
+  padding: 48px 72px;
+  font-size: 36px;
+  background-color: #ffffff;
+  color: rgb(79, 74, 158);
+  border: 5px dotted rgb(223, 72, 72);
+  border-radius: 120px;
+  
+}
+#tai_anh_real:hover{
+    cursor: pointer;
+    transform : scale(1.025);
+    opacity: 0.8;
+    transition: all 0.15s ease;
 }

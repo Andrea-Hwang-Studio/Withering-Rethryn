@@ -38,15 +38,18 @@
 
   <!-- Hiển thị ảnh -->
   <!-- Hiển thị ảnh -->
-  <img src="https://res.cloudinary.com/djnurdfaf/image/upload/v1752062949/images_1_jieshe.jpg"
-     alt="Ảnh minh họa"
-     width="200">
-
+  <div id = "div_anh_Ellen">
+    <img src="https://res.cloudinary.com/djnurdfaf/image/upload/v1752062949/images_1_jieshe.jpg"
+       alt="Ảnh minh họa"
+       width="200"
+       id = "anh_Ellen">
+  </div>
   <br><br>
-  <button id="tai-anh">Tải ảnh về</button>
-
+  <div id = "div_tai_anh">
+       <button id="tai_anh">Tải ảnh về</button>
+  </div>
   <script>
-  document.getElementById("tai-anh").addEventListener("click", async function () {
+  document.getElementById("tai_anh").addEventListener("click", async function () {
     const imageURL = "https://res.cloudinary.com/djnurdfaf/image/upload/v1752069283/download_kvowvs.jpg";
 
     try {
@@ -69,10 +72,12 @@
   });
   </script>
   <br><br>
-  <button id="tai-anh-real">Tải ảnh về</button>
+  <div id = "div_tai_anh_real">
+       <button id="tai_anh_real">Tải ảnh về</button>
+  </div>
 
   <script>
-  document.getElementById("tai-anh-real").addEventListener("click", async function () {
+  document.getElementById("tai_anh_real").addEventListener("click", async function () {
     const imageURL = "https://res.cloudinary.com/djnurdfaf/image/upload/v1752062949/images_1_jieshe.jpg"
      alt="Ảnh minh họa";
 
