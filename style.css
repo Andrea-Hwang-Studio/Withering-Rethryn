@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; /* toàn chiều rộng màn hình */
+}
+h2 {
+    text-align: center;
+}
+#tieu_de_h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+#div_tai_game{
+  height: 15vh;               /* Chiều cao toàn màn hình */
+  display: flex;               /* Kích hoạt Flexbox */
+  justify-content: center;     /* Căn giữa ngang */
+  align-items: center;         /* Căn giữa dọc */
+}
+#tai_game{
+  padding: 24px 36px;
+  font-size: 14px;
+  background-color: #3e22dd;
+  color: rgb(255, 255, 255);
+  border: 5px solid red;
+  border-radius: 20px;
+  
+}
+#tai_game:hover{
+    cursor: pointer;
+    transform : scale(1.2);
+    opacity: 0.8;
+}
+
+ #tai-anh {
+    display: flex;
+    justify-content: center;  /* căn giữa ngang */
+    align-items: center;      /* căn giữa dọc */
+    height: 20vh;             /* chiếm toàn màn hình */
+    
+}
+           
+
+
+#tai-anh-real {
+    display: flex;
+    justify-content: center;  /* căn giữa ngang */
+    align-items: center;      /* căn giữa dọc */
+    height: 20vh;             /* chiếm toàn màn hình */
+}
