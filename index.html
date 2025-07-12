@@ -44,6 +44,25 @@
        width="200"
        id = "anh_Ellen">
   </div>
+
+
+  <script>
+    const img = document.getElementById("anh_Ellen");
+
+    img.onmouseover = function() {
+      img.src = "https://res.cloudinary.com/djnurdfaf/image/upload/v1752069283/download_kvowvs.jpg";
+      img.style.transform = "scale(2.5)";
+      img.style.transition = "all 0.3s ease";
+      img.style.cursor = "pointer";
+    }
+
+    img.onmouseout = function() {
+      img.src = "https://res.cloudinary.com/djnurdfaf/image/upload/v1752062949/images_1_jieshe.jpg";
+      img.style.transform = "scale(1)";
+    }
+  </script>
+
+
   <br><br>
   <div id = "div_tai_anh">
        <button id="tai_anh">Tải ảnh về</button>

@@ -45,6 +45,7 @@ h2 {
 }
 
 #anh_Ellen:hover{
+    background-image: url("https://res.cloudinary.com/djnurdfaf/image/upload/v1752069283/download_kvowvs.jpg");
     cursor: pointer;
     transform : scale(2.5);
     transition: all 0.1s ease;
