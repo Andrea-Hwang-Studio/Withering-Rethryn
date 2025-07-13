@@ -7,6 +7,7 @@ h1 {
 }
 h2 {
     text-align: center;
+    margin : 50px ; 
 }
 #tieu_de_h2{
     text-align: center;
@@ -73,10 +74,12 @@ h2 {
 }
 
 #div_tai_anh_real{
-  height: 25vh;               /* Chiều cao toàn màn hình */
+  height: 15vh;               /* Chiều cao toàn màn hình */
   display: flex;               /* Kích hoạt Flexbox */
   justify-content: center;     /* Căn giữa ngang */
   align-items: center;         /* Căn giữa dọc */
+  margin-top :20px;
+  margin-bottom:15px;
 }
 #tai_anh_real{
   padding: 48px 72px;

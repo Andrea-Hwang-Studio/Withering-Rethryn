@@ -119,7 +119,50 @@
     }
   });
   </script>
-  </body>
+  <h2>
+    <span style ="color:rgb(16, 79, 160)">_____ ,i'm gay!</span>
+  </h2>
+  <style>
+  #khung_nut{
+    display: flex;
+    justify-content: center; /* chỉnh vị trí theo chiều ngang */
+    margin-top: 50px; /* đẩy cả cụm xuống 1 chút cho dễ thấy */
+  }
+  .nut {
+    display: inline-block;
+    justify-content: center;     /* Căn giữa ngang */
+    align-items: center;         /* Căn giữa dọc */
+    margin-top : 10px
+  }
+  .nut_bam {
+    border-radius: 16px;
+    background-color: rgb(44, 235, 85);
+    color:rgb(189, 23, 23);
+    padding : 36px 48px;
+    font-size : 16px;
+    margin-left : 50px;
+    margin-right : 50px;
+  }
+  .nut_bam:hover{
+    cursor:pointer;
+    opacity: 0.8;
+    transition: 0.2;
+    
+  }
+  
+</style>
+<div id = "khung_nut">
+ <div class="nut">
+  <button class = "nut_bam">Yes</button>
+ </div>
+ <div class="nut">
+  <button class = "nut_bam">No</button>
+ </div>
+ <div class="nut">
+  <button class = "nut_bam">*leave the blank*</button>
+ </div>
+</div>
+  
 
 </body>
 </html>
