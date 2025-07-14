@@ -152,8 +152,8 @@
   
 </style>
 <div id = "khung_nut">
- <div class="nut">
-  <button class = "nut_bam">Yes</button>
+ <div class="nut" onclick="troll_rickroll2()">
+  <button class = "nut_bam" >Yes</button>
  </div>
  <div class="nut">
   <button class = "nut_bam">No</button>
@@ -189,6 +189,26 @@
 <script>
   function troll_rickroll() {
     const iframe = document.getElementById("troll");
+    iframe.style.display = "block"; // hiện ra
+
+    // Đợi iframe hiển thị rồi yêu cầu fullscreen
+    setTimeout(() => {
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      }
+    }, 100); // delay nhẹ để tránh lỗi
+  }
+</script>
+<iframe id="troll2" style="display: flex;" width="560" height="315"
+  src="https://www.youtube.com/embed/cf1FDgBVUlU?autoplay=1&mute=1"
+  title="YouTube video"
+  frameborder="0"
+  allow="autoplay; fullscreen"
+  allowfullscreen>
+</iframe>
+<script>
+  function troll_rickroll2() {
+    const iframe = document.getElementById("troll2");
     iframe.style.display = "block"; // hiện ra
 
     // Đợi iframe hiển thị rồi yêu cầu fullscreen
