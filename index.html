@@ -158,11 +158,46 @@
  <div class="nut">
   <button class = "nut_bam">No</button>
  </div>
- <div class="nut">
+ <div class="nut" onclick="troll_rickroll()">
   <button class = "nut_bam">*leave the blank*</button>
  </div>
 </div>
   
+<div id = "div_gif_robin">
+    <img src="https://res.cloudinary.com/djnurdfaf/image/upload/v1752499795/shock_im3uo9.gif"
+       alt="Ảnh minh họa"
+       width="200"
+       id = "anh_gif_robin"
+       onclick="goFull()">
+</div>
 
+<script>
+  function goFull() {
+    const video = document.getElementById("anh_gif_robin");
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    }
+  }
+</script>
+<iframe id="troll" style="display: flex;" width="560" height="315"
+  src="https://www.youtube.com/embed/thIFYBQ6y5w?autoplay=1&mute=1"
+  title="YouTube video"
+  frameborder="0"
+  allow="autoplay; fullscreen"
+  allowfullscreen>
+</iframe>
+<script>
+  function troll_rickroll() {
+    const iframe = document.getElementById("troll");
+    iframe.style.display = "block"; // hiện ra
+
+    // Đợi iframe hiển thị rồi yêu cầu fullscreen
+    setTimeout(() => {
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      }
+    }, 100); // delay nhẹ để tránh lỗi
+  }
+</script>
 </body>
 </html>

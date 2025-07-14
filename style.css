@@ -96,6 +96,20 @@ h2 {
     opacity: 0.8;
     transition: all 0.15s ease;
 }
+#div_gif_robin{
+      
+      display: flex;               /* Kích hoạt Flexbox */
+      justify-content: center;     /* Căn giữa ngang */
+      align-items: center;         /* Căn giữa dọc */
+}
+#anh_gif_robin{
+  margin : 10vh;
+}
+#anh_gif_robin:hover{
+   cursor:pointer;
+   opacity:0.8;
+}
+
 
 body {
   background-image: url("https://res.cloudinary.com/djnurdfaf/image/upload/v1752333347/z6358803795713_89fd73d4c85921fce5581a0259821154_si4jnm.jpg");  /* đường dẫn tới ảnh */
