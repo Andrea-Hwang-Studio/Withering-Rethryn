@@ -109,6 +109,47 @@ h2 {
    cursor:pointer;
    opacity:0.8;
 }
+#div_breaking_news{
+  display: flex;               /* Kích hoạt Flexbox */
+  justify-content: center;     /* Căn giữa ngang */
+  align-items: center;         /* Căn giữa dọc */
+}
+#breaking_news{
+  padding: 24px 36px;
+  font-size: 20px;
+  background-color: #ffcaca;
+  border: 7px solid rgb(255, 115, 0);
+}
+
+#quangcao_overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#quangcao_noidung {
+  position: relative;
+}
+
+#tat_quangcao {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  font-size: 28px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
 
 
 body {

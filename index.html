@@ -172,20 +172,40 @@
 </div>
 
 <script>
-  function goFull() {
+  function goFull() { 
     const video = document.getElementById("anh_gif_robin");
     if (video.requestFullscreen) {
       video.requestFullscreen();
     }
   }
 </script>
-<iframe id="troll" style="display: flex;" width="560" height="315"
-  src="https://www.youtube.com/embed/thIFYBQ6y5w?autoplay=1&mute=1"
-  title="YouTube video"
-  frameborder="0"
-  allow="autoplay; fullscreen"
-  allowfullscreen>
-</iframe>
+
+<div id = "div_breaking_news">
+  <button id = "breaking_news">
+    <span style = "color : red">b</span>
+    <span style = "color : orange">r</span>
+    <span style = "color : yellow">e</span>
+    <span style = "color : yellowgreen">a</span>
+    <span style = "color : green">k</span>
+    <span style = "color : rgb(10, 84, 94)">i</span>
+    <span style = "color : blue">n</span>
+    <span style = "color : rgb(86, 7, 139)">g</span>  
+    <p> </p>
+    <span style = "color : purple">n</span>
+    <span style = "color : rgb(141, 15, 131)">e</span>
+    <span style = "color : rgb(158, 8, 91)">w</span>
+    <span style = "color : rgb(248, 28, 28)">s</span>
+  </button>
+</div>
+<div id = "div_breaking_news">
+  <iframe id="troll" style="display: flex;" width="560" height="315"
+    src="https://www.youtube.com/embed/thIFYBQ6y5w?autoplay=1&mute=1"
+    title="YouTube video"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+</div>
 <script>
   function troll_rickroll() {
     const iframe = document.getElementById("troll");
@@ -199,13 +219,15 @@
     }, 100); // delay nhẹ để tránh lỗi
   }
 </script>
-<iframe id="troll2" style="display: flex;" width="560" height="315"
-  src="https://www.youtube.com/embed/cf1FDgBVUlU?autoplay=1&mute=1"
-  title="YouTube video"
-  frameborder="0"
-  allow="autoplay; fullscreen"
-  allowfullscreen>
-</iframe>
+<div id = "div_breaking_news">
+  <iframe id="troll2" style="display: flex;" width="560" height="315"
+    src="https://www.youtube.com/embed/cf1FDgBVUlU?autoplay=1&mute=1"
+    title="YouTube video"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+</div>
 <script>
   function troll_rickroll2() {
     const iframe = document.getElementById("troll2");
@@ -219,5 +241,21 @@
     }, 100); // delay nhẹ để tránh lỗi
   }
 </script>
+<!-- Nút kích hoạt quảng cáo -->
+<button id="nut_quangcao" onclick="showAd()">Xem quảng cáo</button>
+
+<!-- Khung quảng cáo toàn màn hình -->
+<div id="quangcao_overlay">
+  <div id="quangcao_noidung">
+    <button id="tat_quangcao" onclick="closeAd()">✖</button>
+    <iframe width="800" height="450"
+      src="https://www.youtube.com/embed/Rsw51NWGZcA?autoplay=1"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
